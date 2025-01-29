@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #0143d7;
+    color: #fff;
+    padding-bottom: 50px;
+}
+
+.gif {
+    animation: rotacao 5s infinite linear;
+    animation-play-state: paused;
+}
+
+.gif:hover {
+    animation-play-state: running;
+}
+
+@keyframes rotacao {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+.container {
+    margin-top: 100px;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 44px;
+}
+
+.countdown>p {
+    margin: 0 10px;
+}
+
+.days {
+    margin-right: 20px;
+}
+
+.audioButton {
+    color: #fff;
+    border: none;
+    background: transparent;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #e71214;
+    font-size: 12px;
+}
+
+@media (max-width: 768px) {
+    .gif-container {
+        display: none;
+    }
+}
